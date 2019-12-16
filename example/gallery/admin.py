@@ -23,6 +23,7 @@ class GalleryMultiuploadMixing(object):
             'name': image.filename
         }
 
+
 class GalleryAdmin(GalleryMultiuploadMixing, MultiUploadAdmin):
     inlines = [ImageInlineAdmin,]
     multiupload_form = True
