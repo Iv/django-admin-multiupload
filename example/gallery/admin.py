@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.shortcuts import get_object_or_404
-
-from gallery.models import Gallery, Image
-
 from multiupload.admin import MultiUploadAdmin
+
+from .models import Gallery, Image
+
 
 class ImageInlineAdmin(admin.TabularInline):
     model = Image
